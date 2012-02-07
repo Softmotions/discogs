@@ -29,8 +29,7 @@ exports = module.exports = (format) ->
           err = e
           body = null
       next err, body
-
-    request
+    mh.server.RemoteAPIBottleneck.getInstance().request "discogs"
       uri: getUrl url
       headers: {'accept-encoding': 'gzip'}
       encoding: null
