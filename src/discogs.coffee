@@ -31,7 +31,7 @@ exports = module.exports = (format) ->
       next err, body
     mh.server.RemoteAPIBottleneck.getInstance().request "discogs"
       uri: getUrl url
-      headers: {'accept-encoding': 'gzip'}
+      headers: {'accept-encoding': 'gzip', 'user-agent' : sm.app.Env.getDefault().getUserAgent()}
       encoding: null
       proxy: sm.app.Env.getDefault().getHTTPProxy()
       (error, res, body) =>
