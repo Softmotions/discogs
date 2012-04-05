@@ -1,5 +1,5 @@
 {
-  "name": "discogs",
+  "name": "softmotions-discogs",
   "description": "Simple client for Discogs API",
   "version": "0.3.5",
   "author": "Linus G Thiel <linus@hanssonlarsson.se> (http://hanssonlarsson.se/)",
